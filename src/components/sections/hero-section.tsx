@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 export function HeroSection() {
   return (
     <section className="py-20 md:py-32 bg-gradient-to-br from-background via-background to-muted/20">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center space-y-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -9,13 +9,13 @@ import { Card, CardContent } from '@/components/ui/card'
 export function AboutSection() {
   return (
     <section className="py-20 bg-muted/30">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center"
+          className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center max-w-7xl mx-auto"
         >
           <div className="space-y-6">
             <div className="space-y-2">
