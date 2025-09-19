@@ -4,6 +4,10 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { getPersonalInfo, getSummary } from '@/lib/about'
+
+const personal = getPersonalInfo()
+const summary = getSummary()
 
 export function HeroSection() {
   return (
@@ -28,13 +32,12 @@ export function HeroSection() {
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
               Hi, I&apos;m{' '}
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Phuong Doan
+                {personal.name}
               </span>
             </h1>
-            
+
             <p className="mx-auto max-w-[700px] text-xl text-muted-foreground md:text-2xl">
-              Full Stack Developer passionate about creating innovative web experiences
-              with modern technologies like React, Next.js, and TypeScript.
+              {summary.headline}
             </p>
           </motion.div>
 
@@ -74,7 +77,7 @@ export function HeroSection() {
               <Github className="h-6 w-6" />
             </Link>
             <Link
-              href="https://linkedin.com/in/phuongddx"
+              href={`https://${personal.linkedin}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -82,7 +85,7 @@ export function HeroSection() {
               <Linkedin className="h-6 w-6" />
             </Link>
             <Link
-              href="mailto:hello@phuongddx.com"
+              href={`mailto:${personal.email}`}
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               <Mail className="h-6 w-6" />

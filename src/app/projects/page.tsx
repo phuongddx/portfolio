@@ -4,88 +4,15 @@ import { Github, ExternalLink, Star } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { getAllProjects, getFeaturedProjects, type Project } from '@/lib/projects'
 
 export const metadata: Metadata = {
   title: 'Projects',
   description: 'Explore my portfolio of web development projects, showcasing modern technologies and innovative solutions.',
 }
 
-const projects = [
-  {
-    id: 1,
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with modern UI, payment integration, admin dashboard, inventory management, and real-time analytics. Built with scalability and performance in mind.',
-    image: '/projects/ecommerce.jpg',
-    tech: ['Next.js', 'TypeScript', 'Stripe', 'Prisma', 'PostgreSQL', 'Tailwind CSS'],
-    github: 'https://github.com/phuongddx/ecommerce-platform',
-    demo: 'https://ecommerce-demo.phuongddx.com',
-    featured: true,
-    status: 'Completed',
-    year: '2024'
-  },
-  {
-    id: 2,
-    title: 'Task Management App',
-    description: 'Collaborative task management application with real-time updates, team collaboration features, project boards, time tracking, and detailed reporting capabilities.',
-    image: '/projects/taskmanager.jpg',
-    tech: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Redux', 'Material-UI'],
-    github: 'https://github.com/phuongddx/task-manager',
-    demo: 'https://tasks.phuongddx.com',
-    featured: true,
-    status: 'Completed',
-    year: '2024'
-  },
-  {
-    id: 3,
-    title: 'Weather Dashboard',
-    description: 'Beautiful weather dashboard with location search, 7-day forecasts, interactive maps, weather alerts, and responsive design for all devices.',
-    image: '/projects/weather.jpg',
-    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Weather API', 'Chart.js'],
-    github: 'https://github.com/phuongddx/weather-dashboard',
-    demo: 'https://weather.phuongddx.com',
-    featured: true,
-    status: 'Completed',
-    year: '2023'
-  },
-  {
-    id: 4,
-    title: 'Blog Platform',
-    description: 'Modern blogging platform with MDX support, syntax highlighting, reading time estimation, comments system, and SEO optimization.',
-    image: '/projects/blog.jpg',
-    tech: ['Next.js', 'MDX', 'Prisma', 'PostgreSQL', 'NextAuth.js'],
-    github: 'https://github.com/phuongddx/blog-platform',
-    demo: 'https://blog.phuongddx.com',
-    featured: false,
-    status: 'Completed',
-    year: '2023'
-  },
-  {
-    id: 5,
-    title: 'Social Media Dashboard',
-    description: 'Comprehensive social media management tool with analytics, post scheduling, engagement tracking, and multi-platform support.',
-    image: '/projects/social.jpg',
-    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Twitter API', 'Facebook API'],
-    github: 'https://github.com/phuongddx/social-dashboard',
-    demo: 'https://social.phuongddx.com',
-    featured: false,
-    status: 'In Progress',
-    year: '2024'
-  },
-  {
-    id: 6,
-    title: 'Expense Tracker',
-    description: 'Personal finance management app with expense categorization, budget planning, financial insights, and data visualization.',
-    image: '/projects/expense.jpg',
-    tech: ['React Native', 'Firebase', 'Chart.js', 'Redux'],
-    github: 'https://github.com/phuongddx/expense-tracker',
-    demo: 'https://expenses.phuongddx.com',
-    featured: false,
-    status: 'Completed',
-    year: '2023'
-  }
-]
-
-const featuredProjects = projects.filter(project => project.featured)
+const projects = getAllProjects()
+const featuredProjects = getFeaturedProjects()
 const otherProjects = projects.filter(project => !project.featured)
 
 export default function ProjectsPage() {

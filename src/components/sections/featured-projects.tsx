@@ -6,36 +6,9 @@ import { ArrowRight, Github, ExternalLink } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { getFeaturedProjects } from '@/lib/projects'
 
-const featuredProjects = [
-  {
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with modern UI, payment integration, and admin dashboard.',
-    image: '/projects/ecommerce.jpg',
-    tech: ['Next.js', 'TypeScript', 'Stripe', 'Prisma', 'PostgreSQL'],
-    github: 'https://github.com/phuongddx/ecommerce-platform',
-    demo: 'https://ecommerce-demo.phuongddx.com',
-    featured: true
-  },
-  {
-    title: 'Task Management App',
-    description: 'Collaborative task management application with real-time updates and team collaboration features.',
-    image: '/projects/taskmanager.jpg',
-    tech: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Redux'],
-    github: 'https://github.com/phuongddx/task-manager',
-    demo: 'https://tasks.phuongddx.com',
-    featured: true
-  },
-  {
-    title: 'Weather Dashboard',
-    description: 'Beautiful weather dashboard with location search, forecasts, and responsive design.',
-    image: '/projects/weather.jpg',
-    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Weather API'],
-    github: 'https://github.com/phuongddx/weather-dashboard',
-    demo: 'https://weather.phuongddx.com',
-    featured: true
-  }
-]
+const featuredProjects = getFeaturedProjects()
 
 export function FeaturedProjects() {
   return (
