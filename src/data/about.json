@@ -1,0 +1,167 @@
+{
+  "personal": {
+    "name": "Doan Duy Phuong",
+    "title": "Senior iOS Engineer",
+    "tagline": "Building innovative mobile experiences with passion and precision",
+    "location": "Ho Chi Minh City, Vietnam",
+    "experience": "5+ Years Experience",
+    "email": "95doanphuong@gmail.com",
+    "linkedin": "linkedin.com/in/phuongddx/",
+    "phone": "+84 373.946.083",
+    "avatar": "/avatar.jpg"
+  },
+  "summary": {
+    "headline": "Senior iOS Engineer passionate about creating innovative mobile experiences",
+    "description": "With over 5+ years of experience in iOS development, including leadership roles at prominent tech companies, I bring a wealth of expertise in creating innovative, high-quality mobile applications."
+  },
+  "story": {
+    "paragraphs": [
+      "My journey into iOS development began with a passion for mobile technology and user experience. What started as curiosity about how apps work quickly evolved into a deep expertise in iOS development using Swift and Objective-C.",
+      "Over the past 5+ years, I've had the privilege of working with dynamic teams across different countries - from Singapore's SP Group to Canadian tech companies like Windscribe. I specialize in MVVM architecture, Core frameworks, and modern iOS development practices.",
+      "When I'm not coding, you can find me exploring new iOS technologies, contributing to development communities, or mentoring fellow developers in mobile app development best practices."
+    ]
+  },
+  "stats": [
+    {
+      "value": "4+",
+      "label": "Major Projects",
+      "color": "blue"
+    },
+    {
+      "value": "20+",
+      "label": "iOS Technologies",
+      "color": "green"
+    },
+    {
+      "value": "5+",
+      "label": "Years Experience",
+      "color": "purple"
+    },
+    {
+      "value": "100%",
+      "label": "Client Satisfaction",
+      "color": "orange"
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2024",
+      "title": "Senior iOS Engineer",
+      "company": "Axon Active",
+      "location": "Ho Chi Minh - Hybrid",
+      "period": "07/2024 - Present",
+      "description": "Collaborated with dynamic design team to create UI Design System library for iOS App. Migration existing features and refactoring UI code. Applied AI for support coding and research.",
+      "highlights": [
+        "UI Design System library development",
+        "Feature migration and UI refactoring",
+        "AI integration for development efficiency"
+      ]
+    },
+    {
+      "year": "2021",
+      "title": "Senior iOS Developer",
+      "company": "SP Group",
+      "location": "Singapore - Remote",
+      "period": "04/2021 - 06/2024",
+      "description": "Developed app user experience adhering to Apple's interface guidelines. Utilized Swift and Xcode following MVVM architecture and SOLID principles with 100% test coverage.",
+      "highlights": [
+        "MVVM architecture implementation",
+        "100% test coverage achievement",
+        "API integration and push notifications",
+        "App Store analytics optimization"
+      ]
+    },
+    {
+      "year": "2019",
+      "title": "iOS Developer",
+      "company": "WINDSCRIBE",
+      "location": "Canada - Remote",
+      "period": "08/2019 - 03/2021",
+      "description": "Led team development and conducted code reviews. Implemented CI/CD pipelines for automated deployment and contributed to strategic discussions with CEO and CTO.",
+      "highlights": [
+        "Team leadership and code reviews",
+        "CI/CD pipeline implementation",
+        "Strategic planning participation",
+        "Cross-functional collaboration"
+      ]
+    },
+    {
+      "year": "2017",
+      "title": "iOS Developer",
+      "company": "ZILLEARN",
+      "location": "Ho Chi Minh",
+      "period": "05/2017 - 07/2019",
+      "description": "Maintained and implemented improvements for existing features. Developed CI/CD pipelines and led architecture refactoring efforts using Apple Framework AVFoundation.",
+      "highlights": [
+        "Feature development and maintenance",
+        "Architecture refactoring",
+        "AVFoundation framework implementation",
+        "CI/CD pipeline development"
+      ]
+    }
+  ],
+  "education": {
+    "degree": "Software Engineering",
+    "institution": "Vietnam National University",
+    "period": "2013 - 2018",
+    "description": "Specialized in software engineering with focus on mobile application development and computer science fundamentals."
+  },
+  "skills": {
+    "categories": [
+      {
+        "name": "iOS Development",
+        "items": ["Swift", "Objective-C", "SwiftUI", "UIKit", "Core Data", "Core Animation", "Core Location"]
+      },
+      {
+        "name": "Architecture & Patterns",
+        "items": ["MVVM", "VIPER", "SOLID Principles", "Design Patterns", "Clean Architecture"]
+      },
+      {
+        "name": "Testing & Tools",
+        "items": ["Unit Testing", "XCTest", "Integration Testing", "Simple UI Test", "Xcode", "Instruments"]
+      },
+      {
+        "name": "Development Tools",
+        "items": ["Xcode", "CocoaPods", "Swift Package Manager", "Jenkins CI/CD", "Git", "RESTful API"]
+      },
+      {
+        "name": "Collaboration",
+        "items": ["Agile", "Scrum", "Kanban", "Code Reviews", "Cross-functional Teams", "Task Management"]
+      }
+    ]
+  },
+  "interests": [
+    {
+      "name": "iOS Development",
+      "icon": "Code",
+      "description": "Staying updated with latest iOS technologies and frameworks"
+    },
+    {
+      "name": "Tech Leadership",
+      "icon": "Users",
+      "description": "Mentoring developers and leading technical discussions"
+    },
+    {
+      "name": "Open Source",
+      "icon": "Heart",
+      "description": "Contributing to iOS development community"
+    },
+    {
+      "name": "Mobile UX",
+      "icon": "Smartphone",
+      "description": "Crafting exceptional mobile user experiences"
+    }
+  ],
+  "cta": {
+    "headline": "Let's Build Something Amazing Together",
+    "description": "I'm always excited to work on innovative iOS projects and collaborate with talented teams to create exceptional mobile experiences.",
+    "primaryAction": {
+      "text": "Start a Conversation",
+      "href": "/contact"
+    },
+    "secondaryAction": {
+      "text": "Download Resume",
+      "href": "/PhuongDoan-2025.pdf"
+    }
+  }
+}
